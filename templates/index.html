@@ -11,43 +11,49 @@
         <h1>Previsão de Espécie de Íris</h1>
         <p>Insira as características da flor ou envie um arquivo para obter previsões.</p>
         
-        <ul>
-            <li><button id="form-tab" class="active">Formulário</button></li>
-            <li><button id="file-tab">Upload de Arquivo</button></li>
+        <ul class="tab-header">
+            <li><button id="form-tab" class="tab-button active">Formulário</button></li>
+            <li><button id="file-tab" class="tab-button">Upload de Arquivo</button></li>
         </ul>
+        
 
         <div id="form-section" class="tab-section active">
-            <form id="prediction-form">
-                <div class="form-group">
-                    <label for="sepal_length">Comprimento da Sépala (cm):</label>
-                    <input type="number" step="0.01" id="sepal_length" name="sepal_length" placeholder="Ex: 5.1" required>
-                </div>
-                <div class="form-group">
-                    <label for="sepal_width">Largura da Sépala (cm):</label>
-                    <input type="number" step="0.01" id="sepal_width" name="sepal_width" placeholder="Ex: 3.5" required>
-                </div>
-                <div class="form-group">
-                    <label for="petal_length">Comprimento da Pétala (cm):</label>
-                    <input type="number" step="0.01" id="petal_length" name="petal_length" placeholder="Ex: 1.4" required>
-                </div>
-                <div class="form-group">
-                    <label for="petal_width">Largura da Pétala (cm):</label>
-                    <input type="number" step="0.01" id="petal_width" name="petal_width" placeholder="Ex: 0.2" required>
-                </div>
-                <button type="submit">Prever Espécie</button>
-            </form>
-            <div id="result"></div>
+            <div class="form">
+                <form id="prediction-form">
+                    <div class="form-group">
+                        <label for="sepal_length">Comprimento da Sépala (cm):</label>
+                        <input type="number" step="0.01" id="sepal_length" name="sepal_length" placeholder="Ex: 5.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sepal_width">Largura da Sépala (cm):</label>
+                        <input type="number" step="0.01" id="sepal_width" name="sepal_width" placeholder="Ex: 3.5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="petal_length">Comprimento da Pétala (cm):</label>
+                        <input type="number" step="0.01" id="petal_length" name="petal_length" placeholder="Ex: 1.4" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="petal_width">Largura da Pétala (cm):</label>
+                        <input type="number" step="0.01" id="petal_width" name="petal_width" placeholder="Ex: 0.2" required>
+                    </div>
+                    <button type="submit">Prever Espécie</button>
+                </form>
+                <div id="result" class="result">Previsão:</div>
+            </div>
         </div>
 
         <div id="file-section" class="tab-section">
-            <form id="file-upload-form" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="file-input">Envie um arquivo .txt:</label>
-                    <input type="file" id="file-input" name="file" accept=".txt" required>
-                </div>
-                <button type="submit">Enviar Arquivo</button>
-            </form>
-            <div id="file-result"></div>
+            <div class="form">
+                <form id="file-upload-form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="file-input">Envie um arquivo .txt:</label>
+                        <input type="file" id="file-input" name="file" accept=".txt" required>
+                    </div>
+                    <button type="submit">Enviar Arquivo</button>
+                </form>
+                <div id="file-result"></div>
+            </div>
+            
         </div>
     </div>
 

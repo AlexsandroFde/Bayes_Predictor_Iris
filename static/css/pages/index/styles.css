@@ -32,7 +32,6 @@ h1 {
 p {
     color: #666;
     font-size: 16px;
-    margin-bottom: 20px;
 }
 
 .form-group {
@@ -111,7 +110,6 @@ ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 button {
@@ -130,12 +128,53 @@ button.active {
     background-color: #0056b3;
 }
 
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-button {
+    flex: 1;
+    background-color: #e7f1ff; 
+    border: 1px solid #007bff;
+    border-bottom: 1px solid transparent;
+    border-radius: 6px 6px 0 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.tab-button:hover {
+    background-color: #cce5ff;
+}
+
+.tab-button.active {
+    background-color: #007bff;
+    color: white;
+    border-bottom: 1px solid transparent;
+}
+
 .tab-section {
+    height: 65vh;
     display: none;
+    border: 1px solid #007bff;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 6px 6px;
 }
 
 .tab-section.active {
-    display: block;
+    display: flex;
+}
+
+.form {
+    width: 100%;
+}
+
+.result {
+    height: 40px;
 }
 
 #result {
