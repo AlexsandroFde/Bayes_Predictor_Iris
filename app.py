@@ -41,7 +41,7 @@ def upload_file():
         results.append(f"{' '.join(map(str, features))} {predicted_species}")
 
     # Salvar resultados em um novo arquivo .txt
-    result_filename = 'result.txt'
+    result_filename = 'data/result.txt'
     with open(result_filename, 'w') as f:
         for result in results:
             f.write(result + '\n')
