@@ -1,0 +1,14 @@
+:root {
+    --white: #fff;
+    --white-light-overlay: rgba(255, 255, 255, 0.1);
+    --white-very-light-overlay: rgba(255, 255, 255, 0.01);
+    --white-to-dark-gray-gradient: linear-gradient(90deg, #fff, #535353);
+    --black-to-purple-gradient: linear-gradient(100deg, #000, #4f2085);
+    --vibrant-purple: #4f2085;
+    --dark-purple: #3b1f5c;
+    --very-dark-purple: #28173b;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 24px
+}
